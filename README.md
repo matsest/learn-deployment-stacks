@@ -8,12 +8,6 @@ Deployment stacks in Bicep is an alternate method of declaratively deploying res
 
 See [MS Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell) for more information and [quickstart](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-deployment-stacks?tabs=azure-cli%2CCLI) for getting started.
 
-## Example
-
-To demonstrate deployment stacks the following file [main.bicep](./main.bicep) will be used as an example.
-
-It contains ...
-
 ## Limitations
 
 - No [what-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if) support (yet): no method for previewing your changes prior to updating a stack (equivalent to a `terraform plan` operation). This is perhaps the biggest limitation to wide adoption for this method of deployment.
@@ -74,6 +68,12 @@ az stack sub create \
 ```
 
 ## Demo
+
+To demonstrate deployment stacks the following file [main.bicep](./main.bicep) will be used as an example deployment.
+
+It contains a resource group, a virtual network with two subnets and a storage account.
+
+![stack](./stack.png)
 
 1. Create the stack:
 
