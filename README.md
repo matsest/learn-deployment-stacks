@@ -82,9 +82,9 @@ az stack sub create --name demo-stack --location westeurope --template-file main
 ```
 
 2. Try to remove `subnet2` via the portal
-  1. Navigate to the deployed virtual network
-  2. Select **Subnets** in the side menu
-  3. Highlight `subnet2` and select **Delete**
+    1. Navigate to the deployed virtual network
+    2. Select **Subnets** in the side menu
+    3. Highlight `subnet2` and select **Delete**
 
 This should invoke a denied action ("Failed to delete subnet") due to the deny lock created by the deployment stack.
 
@@ -108,4 +108,4 @@ az stack sub create --name demo-stack --location westeurope --template-file main
 
 Validate the command with `y` after running
 
-4. Verify that the subnet has been removed in the portal :white_check_mark:
+3. Verify that the subnet has been removed in the portal :white_check_mark:
